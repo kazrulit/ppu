@@ -123,9 +123,12 @@ img.alignleft {
 .bottom-fluid .container .block .title {
   color: #0a0a0a;
   font: 700 20.23px "Open sans", sans-serif;
+  padding-bottom: 20px;
 }
 .bottom-fluid .container .block .sm-block {
   width: 300px;
+  padding-left: 35px;
+  margin-bottom: 15px;
 }
 .bottom-fluid .container .block .sm-block p {
   color: #666666;
@@ -135,6 +138,15 @@ img.alignleft {
   padding-left: 0px;
   font-size: 12px;
 }
+.bottom-fluid .container .block .sm-block:nth-of-type(1) {
+  background: url(images/address-icon.png) left center no-repeat;
+}
+.bottom-fluid .container .block .sm-block:nth-of-type(2) {
+  background: url(images/phone-icon.png) left center no-repeat;
+}
+.bottom-fluid .container .block .sm-block:nth-of-type(3) {
+  background: url(images/email-icon.png) left center no-repeat;
+}
 .bottom-fluid .container .block .form-group .btn {
   border: 2px solid #cccccc;
   color: #000;
@@ -143,4 +155,19 @@ img.alignleft {
 }
 .bottom-fluid .container .block .form-group input, .bottom-fluid .container .block .form-group textarea {
   border-radius: 0px;
+}
+
+.footer-fluid {
+  padding-top: 20px;
+}
+.footer-fluid .container p {
+  color: #666666;
+  font: 400 11.699px "Open sans", sans-serif;
+}
+.footer-fluid .container p span {
+  color: #a40000;
+}
+.footer-fluid .container p.made-in {
+  line-height: 38px;
+  text-align: right;
 }
