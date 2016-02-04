@@ -1,89 +1,183 @@
-$f : 'Open sans', sans-serif;
-@mixin border-radius($radius) {  
-  -moz-border-radius: $radius;  
-  -webkit-border-radius: $radius;  
-  -ms-border-radius: $radius;  
-  border-radius: $radius;  
+$f: 'Open sans', sans-serif;
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
 }
-@mixin transform($radius) {  
-  -moz-transform: $radius;  
-  -ms-transform: $radius;  
-  -webkit-transform: $radius;  
-  -o-transform: $radius;  
-  transform: $radius;  
+
+@mixin transform($radius) {
+  -moz-transform: $radius;
+  -ms-transform: $radius;
+  -webkit-transform: $radius;
+  -o-transform: $radius;
+  transform: $radius;
 }
+
 @mixin transition($radius) {
   -webkit-transition: $radius;
-  -moz-transition:$radius;
+  -moz-transition: $radius;
   -o-transition: $radius;
   transition: $radius;
 }
 
-html{color:#000;background:none; font-family: $f;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
-html, body
-{
-    height: 100%;
-    padding: 0;
-    margin: 0;
+html {
+  color: #000;
+  background: none;
+  font-family: $f;
 }
-html>body .the-mainest {
-    
-    min-height: 100%;
-    position:relative;
-    overflow: hidden;
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
 }
-strong
-{
-    font-weight: bold !important;
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-.alignleft
-{
-    float:left;
+
+fieldset, img {
+  border: 0;
 }
-.alignright
-{
-    float:right;
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
 }
+
+li {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input, textarea, select {
+  *font-size: 100%;
+}
+
+legend {
+  color: #000;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html > body .the-mainest {
+
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+strong {
+  font-weight: bold !important;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
 img {
-  &.alignright{
+  &.alignright {
     margin-left: 10px;
   }
   &.alignleft {
     margin-right: 10px;
   }
 }
+
 .aligncenter {
   display: block;
   margin: 0 auto;
 }
-.clears
-{
-    clear: both;
+
+.clears {
+  clear: both;
 }
 
-#load-more
-{
+#load-more {
   display: none;
 }
-
 
 .container-fluid {
   position: relative;
   z-index: 2;
 }
 
-
 .bottom-fluid {
-  .block {
-    .btn {
-      border: 2px solid #cccccc;
-      color: #000;
-      background: none;
-      border-radius: 0px;
-    }
+  .container {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+    .block {
+      .title {
+        color: #0a0a0a;
+        font: 700 20.23px $f;
+      }
 
-    input, textarea {
-      border-radius: 0px;
+      .sm-block {
+          width: 300px;
+          p {
+              color: #666666;
+              font: 400 12px $f;
+          }
+          
+          .btn-link {
+              padding-left: 0px;
+              font-size: 12px;
+          }
+      }
+      .form-group {
+        .btn {
+          border: 2px solid #cccccc;
+          color: #000;
+          background: none;
+          border-radius: 0px;
+        }
+
+        input, textarea {
+          border-radius: 0px;
+        }
+      }
+
     }
   }
+
 }

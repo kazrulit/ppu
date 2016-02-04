@@ -116,12 +116,31 @@ img.alignleft {
   z-index: 2;
 }
 
-.bottom-fluid .block .btn {
+.bottom-fluid .container {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+.bottom-fluid .container .block .title {
+  color: #0a0a0a;
+  font: 700 20.23px "Open sans", sans-serif;
+}
+.bottom-fluid .container .block .sm-block {
+  width: 300px;
+}
+.bottom-fluid .container .block .sm-block p {
+  color: #666666;
+  font: 400 12px "Open sans", sans-serif;
+}
+.bottom-fluid .container .block .sm-block .btn-link {
+  padding-left: 0px;
+  font-size: 12px;
+}
+.bottom-fluid .container .block .form-group .btn {
   border: 2px solid #cccccc;
   color: #000;
   background: none;
   border-radius: 0px;
 }
-.bottom-fluid .block input, .bottom-fluid .block textarea {
+.bottom-fluid .container .block .form-group input, .bottom-fluid .container .block .form-group textarea {
   border-radius: 0px;
 }
