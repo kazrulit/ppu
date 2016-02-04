@@ -152,6 +152,13 @@ img {
 .header-menu {
     background-color: #000000;
     height: 60px;
+    &.sticky {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        z-index: 10;
+        width: 100%;
+    }
     .go-top {
         margin-top: 5px;
         display: block
@@ -200,6 +207,7 @@ img {
         padding-top: 30px;
         position: relative;
         text-transform: uppercase;
+        margin-bottom: 50px;
         &:before {
             content: "";
             position: absolute;
@@ -210,6 +218,15 @@ img {
             height: 11px;
             width: 100%;
         }
+    }
+    
+    .sm-block {
+        padding-left: 50px;
+        margin-bottom: 30px;
+        background: url(images/offerings-good.png) left 5px no-repeat;
+        color: #000000;
+        font: 400 16px / 18px $f;
+        min-height: 50px;
     }
 }
 
