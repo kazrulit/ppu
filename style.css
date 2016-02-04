@@ -116,6 +116,73 @@ img.alignleft {
   z-index: 2;
 }
 
+.header-fluid {
+  background: url(images/header-top.png) no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 960px;
+}
+
+.header-menu {
+  background-color: #000000;
+  height: 60px;
+}
+.header-menu .go-top {
+  margin-top: 5px;
+  display: block;
+}
+.header-menu nav {
+  padding-top: 20px;
+}
+.header-menu nav ul li {
+  color: #fefefe;
+  font: 400 16px/18px "Open sans", sans-serif;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  padding: 0px 8px;
+  border-right: 1px solid #fefefe;
+}
+.header-menu nav ul li:last-child {
+  border-right: none;
+}
+.header-menu nav ul li a {
+  color: #fefefe;
+}
+.header-menu .phone {
+  color: #fefefe;
+  font: 400 16px/18px "Open sans", sans-serif;
+  line-height: 60px;
+}
+.header-menu .phone span {
+  color: #fefefe;
+  font: 700 16px/18px "Open sans", sans-serif;
+}
+
+.offerings-fluid {
+  background: url(images/gray-bg.png) repeat;
+  min-height: 440px;
+}
+.offerings-fluid .title {
+  color: #000000;
+  font: 400 20px/48px "Open sans", sans-serif;
+  display: table;
+  margin: 0 auto;
+  padding-top: 30px;
+  position: relative;
+  text-transform: uppercase;
+}
+.offerings-fluid .title:before {
+  content: "";
+  position: absolute;
+  background: url(images/under-title-offerings.png) no-repeat;
+  background-size: 100% 100%;
+  left: 0px;
+  bottom: -4px;
+  height: 11px;
+  width: 100%;
+}
+
 .bottom-fluid .container {
   padding-bottom: 10px;
   border-bottom: 1px solid #cccccc;
